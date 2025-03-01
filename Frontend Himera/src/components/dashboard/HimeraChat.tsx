@@ -124,8 +124,8 @@ export const HimeraChat = () => {
   };
 
   return (
-    <section className="border border-[color:var(--Neutral-Colors-400,#5F5B)] shadow-[1px_1px_1px_0px_rgba(16,25,52,0.40)] bg-[#1E1E1E] flex w-full flex-col items-stretch pt-2.5 pb-[21px] px-2.5 rounded-[5px] border-solid h-full">
-      <h2 className="text-[#E7E7E6] text-base font-medium leading-none">
+    <section className="border mb-1 shadow-[1px_1px_1px_0px_rgba(16,25,52,0.40)] bg-[#1E1E1E] flex w-full flex-col items-stretch pt-2.5 pb-[21px] px-2.5 rounded-[5px] border-solid h-full">
+      <h2 className="text-[#E7E7E6] text-base font-medium leading-none" >
         Mammoth Chat
       </h2>
 
@@ -214,7 +214,7 @@ export const HimeraChat = () => {
         />
         <button 
           type="submit"
-          className="items-center bg-[#138ACB] flex gap-2 overflow-hidden w-10 h-10 my-auto p-2 rounded-[2000px]"
+          className="items-center bg-[#8951FF] flex gap-2 overflow-hidden w-10 h-10 my-auto p-2 rounded-[2000px]"
         >
           <img
             src="https://cdn.builder.io/api/v1/image/assets/45b490384eae4eb6a53b528c6ba6ac8f/e9f124ec977b4710f323d86fcae91ae7001f9233870a6104dd4ceeb05a5e79c0?placeholderIfAbsent=true"

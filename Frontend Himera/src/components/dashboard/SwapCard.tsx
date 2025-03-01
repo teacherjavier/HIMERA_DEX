@@ -324,11 +324,11 @@ export const SwapCard = () => {
   };
 
   return (
-    <section className="card-base flex w-full flex-col py-4">
+    <section className="card-base flex w-full flex-col py-4 mb-1">
       <div className="self-stretch flex w-full flex-col items-stretch text-card-foreground px-4 gap-4">
         <h2 className="text-base leading-none">Buy Tokens</h2>
 
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 ">
           <div className="flex flex-col gap-2">
             <button 
               className="btn-primary w-full py-3 px-4"

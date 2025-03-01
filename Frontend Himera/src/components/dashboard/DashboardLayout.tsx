@@ -10,10 +10,10 @@ import { ExistingStrategies } from "./ExistingStrategies";
 
 export const DashboardLayout = () => {
   return (
-    <div className="bg-[#171716] overflow-hidden pb-[7px]">
+    <div className="overflow-hidden pb-[7px]">
       <TopBar />
       <div className="mt-1 max-md:max-w-full">
-        <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
+        <div className="gap-1 flex max-md:flex-col max-md:items-stretch">
           {/* Left Column */}
           <div className="w-[23%] max-md:w-full max-md:ml-0">
             <div className="font-medium">
@@ -23,7 +23,7 @@ export const DashboardLayout = () => {
           </div>
 
           {/* Middle Column */}
-          <div className="w-[53%] ml-5 max-md:w-full max-md:ml-0">
+          <div className="w-[53%] max-md:w-full max-md:ml-0">
             <div className="max-md:max-w-full">
               <SwapPoolChart />
               <PositionsTable />
@@ -31,7 +31,7 @@ export const DashboardLayout = () => {
           </div>
 
           {/* Right Column */}
-          <div className="w-[23%] ml-5 max-md:w-full max-md:ml-0">
+          <div className="w-[23%] max-md:w-full max-md:ml-0">
             <div className="grow">
               <HimeraChat />
               <ExistingStrategies />

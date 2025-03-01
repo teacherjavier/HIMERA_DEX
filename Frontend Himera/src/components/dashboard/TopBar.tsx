@@ -159,7 +159,7 @@ export const TopBar = () => {
   }, []);
 
   return (
-    <header className="shadow-[0px_32px_72px_0px_rgba(20,20,43,0.24)] bg-[#1E1E1E] flex w-full items-stretch gap-5 text-xs text-white font-medium text-center leading-none flex-wrap justify-between px-6 py-[19px] max-md:max-w-full max-md:mr-1 max-md:pr-5">
+    <header className="shadow-[0px_32px_72px_0px_rgba(20,20,43,0.24)] border-2 border-solid border-[#333]/10 p-5 m-2 bg-[#1E1E1E]/70 flex items-stretch gap-5 text-white font-medium text-center leading-none flex-wrap justify-between max-md:pr-5">
       <div className="flex items-center gap-5">
         <img
           src="https://cdn.builder.io/api/v1/image/assets/45b490384eae4eb6a53b528c6ba6ac8f/a76d399081b98081f20713ea82ddc4433d22c82a211729bef92786fc4e211d0a?placeholderIfAbsent=true"
@@ -196,7 +196,7 @@ export const TopBar = () => {
       </div>
       <nav className="flex items-stretch gap-[15px] my-auto">
         <button
-          className="self-stretch rounded bg-[#3E3E3B] gap-1.5 whitespace-nowrap p-2"
+          className="rounded bg-[#3E3E3B] gap-1.5 whitespace-nowrap p-2"
           aria-label="Profile"
         >
           Profile
@@ -204,7 +204,7 @@ export const TopBar = () => {
         {account ? (
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <button className="self-stretch rounded bg-[#138ACB] gap-1.5 px-4 py-2 hover:bg-[#1070A3] transition-colors flex items-center">
+              <button className="rounded bg-[#138ACB] gap-1.5 px-4 py-2 hover:bg-[#1070A3] transition-colors flex items-center">
                 {`${account.slice(0, 6)}...${account.slice(-4)}`}
                 <ChevronDown className="ml-2 h-4 w-4" />
               </button>
@@ -222,7 +222,7 @@ export const TopBar = () => {
           </DropdownMenu>
         ) : (
           <button
-            className="self-stretch rounded bg-[#138ACB] gap-1.5 px-4 py-2 hover:bg-[#1070A3] transition-colors"
+            className="rounded bg-[#138ACB] gap-1.5 px-4 py-2 hover:bg-[#1070A3] transition-colors"
             onClick={connectWallet}
           >
             Connect Wallet

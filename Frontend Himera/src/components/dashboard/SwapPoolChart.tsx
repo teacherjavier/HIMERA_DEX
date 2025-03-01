@@ -239,7 +239,7 @@ export const SwapPoolChart = () => {
   const scaledTvl = tvl * 100; // Multiplicamos por 100 para que 30 = 3000
 
   return (
-    <section className="border border-[color:var(--Neutral-Colors-400,#5F5F5B)] shadow-[1px_1px_1px_0px_rgba(16,25,52,0.40)] bg-[#1E1E1E] flex w-full flex-col items-stretch font-medium pl-[22px] pr-12 pt-[18px] pb-[31px] rounded-[5px] border-solid max-md:max-w-full max-md:px-5 relative">
+    <section className="border border-[color:var(--Neutral-Colors-400,#5F5F5B)] shadow-[1px_1px_1px_0px_rgba(16,25,52,0.40)] bg-[#1E1E1E] flex w-full flex-col items-stretch font-medium pl-[22px] pr-12 pt-[18px] pb-[31px] rounded-[5px] border-solid max-md:max-w-full max-md:px-5 relative mb-1">
       <div className="flex w-full items-stretch gap-5 flex-wrap justify-between max-md:max-w-full">
         <div className="flex flex-col items-stretch">
           <div className="flex items-center gap-4 relative z-50">

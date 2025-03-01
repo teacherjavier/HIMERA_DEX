@@ -1,5 +1,6 @@
 import React from 'react'
 import { JetBrains_Mono } from 'next/font/google'
+import './globals.css'
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ['latin'],

@@ -76,8 +76,8 @@ export const PositionsTable = () => {
   const positions = usePositions(account);
 
   return (
-    <section className="border border-[color:var(--Neutral-Colors-400,#5F5F5B)] shadow-[1px_1px_1px_0px_rgba(16,25,52,0.40)] bg-[#1E1E1E] pt-4 pb-[25px] px-[17px] rounded-[5px] border-solid max-md:max-w-full">
-      <div className="border border-[color:var(--Neutral-Colors-400,#5F5F5B)] shadow-[1px_1px_1px_0px_rgba(16,25,52,0.40)] bg-[rgba(178,177,174,0.3)] w-full pb-1.5 rounded-[5px] border-solid max-md:max-w-full">
+    <section className="border border-[color:var(--Neutral-Colors-400,#5F5F5B)] shadow-[1px_1px_1px_0px_rgba(16,25,52,0.40)] bg-[#1E1E1E] p-3 rounded-[5px] border-solid max-md:max-w-full">
+      <div className="rounded-sm bg-[#B2B1AE]/30 p-2 mb-1 border-2 border-solid border-2 border-solid border-[#5F5F5B]">
         <div className="items-center border-b-[color:var(--Secondary-Colors-Color-2,#DFF3FD)] z-10 flex gap-2 text-base text-[#B2B1AE] font-medium leading-[1.2] -mt-1 pr-6 border-b border-solid max-md:pr-5">
           <TabButtons />
         </div>
