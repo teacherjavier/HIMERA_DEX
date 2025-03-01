@@ -1,0 +1,67 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 12%;
+    --foreground: 0 0% 90%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 90%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 90%;
+
+    --primary: 36 57% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 203 83% 44%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 60 2% 69%;
+    --muted-foreground: 60 2% 37%;
+
+    --accent: 36 57% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 60 3% 37%;
+    --input: 60 3% 37%;
+    --ring: 36 57% 58%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Button Base Styles */
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-hover text-primary-foreground font-medium rounded-md 
+           transition-colors focus:ring-2 focus:ring-offset-2 focus:ring-primary 
+           focus:ring-offset-card focus:outline-none;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary-hover text-secondary-foreground font-medium rounded-md 
+           transition-colors focus:ring-2 focus:ring-offset-2 focus:ring-secondary 
+           focus:ring-offset-card focus:outline-none;
+  }
+
+  /* Card Base Styles */
+  .card-base {
+    @apply border border-card-border shadow-[1px_1px_1px_0px_rgba(16,25,52,0.40)] 
+           bg-card rounded-[5px] border-solid;
+  }
+}
